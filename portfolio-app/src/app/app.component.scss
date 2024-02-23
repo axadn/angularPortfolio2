@@ -1,0 +1,19 @@
+.toolbar{
+    align-items: stretch;
+    padding: 0;
+
+    .nav-link{
+        border-radius: 2px 0 0 0;
+        margin: 0;
+        padding: 15px;
+
+        &:hover{
+            cursor: pointer;
+        }
+
+        &.active{
+            background: white;
+            color:black;
+        }
+    }
+}

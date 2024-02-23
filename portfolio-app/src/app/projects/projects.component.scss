@@ -1,0 +1,31 @@
+.projects-grid{
+    display: flex;
+    padding: 50px;
+}
+.project-preview{
+    padding: 10px;
+    .top-section{
+        position: relative;
+        width: 350px;
+        height: 200px;
+        .project-text {
+            align-items: center;
+            background: #7f7f7f7d;
+            color:black;
+            display: flex;
+            height: 200px;
+            justify-content: center;
+            position: absolute;
+            top: 0;
+            width: 350px;
+        }
+        img{
+            width: 350px;
+            height: 200px;
+        }
+    }
+    .bottom-section{
+        padding-top: 7px;
+        text-align: center;
+    }
+}

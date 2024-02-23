@@ -1,0 +1,16 @@
+<div class="projects-grid">
+    <div *ngFor="let item of projectItems" class="project-preview">
+        <a href="google.com">
+            <div class="top-section">
+                <img src="{{item.previewSrc}}">
+                <div class="project-text">
+                    <span class="project-title">{{item.title}}</span>
+                </div>
+            </div>
+        </a>
+        
+        <div class="bottom-section">
+           {{item.skills.join(" | ")}}
+        </div>
+    </div>
+</div>
