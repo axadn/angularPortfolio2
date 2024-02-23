@@ -21,9 +21,9 @@ export class ProjectDetailComponent implements OnInit{
     '1' : {
       title: "Project 1",
       slides: [{type: 'html',
-      html: this.sanitizer.bypassSecurityTrustHtml('<iframe width="100%" height="100%" src="https://www.youtube.com/embed/AFQ8x1VonLw?si=3aarrwAZFdAJSoFX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>'), description: "video desc"}, 
-      {type: 'video', src:'', description: "video desc2"}],
-      summary: 'a project',
+      html: this.sanitizer.bypassSecurityTrustHtml('<iframe width="100%" height="100%" src="https://www.youtube.com/embed/AFQ8x1VonLw?si=3aarrwAZFdAJSoFX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>'), 
+      description: "The complete soundtrack"}], 
+      summary: 'Gate of Providence is an RPG that was created by Studio Xehryn. I composed 12 original soundtracks for this game',
       skills : ['fooling around', 'programming']
 
     },

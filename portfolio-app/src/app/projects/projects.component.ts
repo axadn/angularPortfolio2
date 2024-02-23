@@ -20,10 +20,9 @@ export class ProjectsComponent {
   workTypeFilter = "all";
   projectItems: ProjectItem[] = [
     {
-      title: 'placeholder',
-      previewSrc: 'assets/Apple.webp',
-      skills: [{id: "art", label: '3d modeling'}, {id: 'software', label: "software development"},
-        {id: "music", label: "composition"}],
+      title: '',
+      previewSrc: 'assets/providence/g.png',
+      skills: [{id: 'music', label: "Musical Compisition"}],
       id: '1'
     },
     {
