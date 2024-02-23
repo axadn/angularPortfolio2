@@ -23,14 +23,15 @@ export class ProjectsComponent {
       title: '',
       previewSrc: 'assets/providence/g.png',
       skills: [{id: 'music', label: "Musical Compisition"}],
-      id: '1'
+      id: 'providence'
     },
     {
-      title: 'placeholder',
-      previewSrc: 'assets/Apple.webp',
-      skills: [{id: "art", label: '3d modeling'}, {id: 'software', label: "software development"}],
-      id: '2'
-
+      title: 'Missing Note',
+      previewSrc: 'assets/missingNote/preview.png',
+      skills: [{id: "art", label: '3d Models'}, {id: "art", label: '2d Art'},
+       {id: 'software', label: "Programming/Development"},
+       {id: 'music', label: "Music"}],
+      id: 'missingNote'
     }
   ];
 
