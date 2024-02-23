@@ -1,1 +1,4 @@
 <h2>{{(details$ | async)?.title}}</h2>
+<app-carousel [slides]="(details$ | async)?.slides ?? []">
+
+</app-carousel>

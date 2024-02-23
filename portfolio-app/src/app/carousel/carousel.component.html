@@ -1,0 +1,14 @@
+<button mat-icon-button class="back-button" (click)="decrementSlide()" color="primary">
+    <mat-icon>navigate_before</mat-icon>
+</button>
+
+<div class="slide-content">
+    <div *ngIf="slides[slideIdx].type == 'html'" [innerHTML]="slides[slideIdx].html" class="embedded">
+    </div>
+    <div class="description">
+        {{slides[slideIdx].description}}
+    </div>
+</div>
+<button mat-icon-button class="forward-button" (click)="incrementSlide()" color="primary">
+    <mat-icon>navigate_next</mat-icon>
+</button>
