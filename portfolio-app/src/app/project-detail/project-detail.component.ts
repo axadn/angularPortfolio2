@@ -29,7 +29,7 @@ export class ProjectDetailComponent implements OnInit{
     },
     '2' : {
       title: "Project 2",
-      slides: [],
+      slides: [{type: 'image', src: '', description: ''}],
       summary: 'a project',
       skills : ['fooling around', 'programming']
 

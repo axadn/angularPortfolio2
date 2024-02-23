@@ -1,16 +1,32 @@
+<mat-form-field  class="project-type-select">
+    Work Type
+    <mat-select [(value)]="workTypeFilter">
+        <mat-option value="all">
+            All
+        </mat-option>
+        @for (workType of workTypes; track workType){
+            <mat-option [value]="workType.id">
+                {{workType.label}}
+            </mat-option>
+        }
+    </mat-select>
+</mat-form-field>
+
 <div class="projects-grid">
-    <div *ngFor="let item of projectItems" class="project-preview">
-        <a href="projects/{{item.id}}">
-            <div class="top-section">
-                <img src="{{item.previewSrc}}">
-                <div class="project-text">
-                    <span class="project-title">{{item.title}}</span>
+    @for(item of projectItems; track item.id){
+        <div *ngIf="shouldDisplay(item)"class="project-preview">
+            <a href="projects/{{item.id}}">
+                <div class="top-section">
+                    <img src="{{item.previewSrc}}">
+                    <div class="project-text">
+                        <span class="project-title">{{item.title}}</span>
+                    </div>
                 </div>
+            </a>
+            
+            <div class="bottom-section">
+            {{getSkillsLabel(item)}}
             </div>
-        </a>
-        
-        <div class="bottom-section">
-           {{item.skills.join(" | ")}}
         </div>
-    </div>
+    }
 </div>
