@@ -29,7 +29,7 @@ export class ProjectDetailComponent implements OnInit{
     },
     '2' : {
       title: "Project 2",
-      slides: [{type: 'image', src: '', description: ''}],
+      slides: [{type: 'image', src: '', description: 'abcd'}],
       summary: 'a project',
       skills : ['fooling around', 'programming']
 
@@ -58,6 +58,6 @@ export interface Slide {
 interface ProjectDetails  {
   title: string;
   slides: Slide[];
-  summary: string;
+  summary: SafeHtml;
   skills: string [];
 }

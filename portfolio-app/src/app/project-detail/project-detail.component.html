@@ -2,6 +2,6 @@
 <app-carousel [slides]="(details$ | async)?.slides ?? []">
 
 </app-carousel>
-<div class="project-description">
+<div class="project-description" [innerHtml]="(details$ | async)?.summary">
     description
 </div>
