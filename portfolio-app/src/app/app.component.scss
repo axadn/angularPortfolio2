@@ -22,4 +22,6 @@
 
 .content-wrapper{
     padding: 35px;
+    height: calc(100% - 64px);
+    box-sizing: border-box;
 }

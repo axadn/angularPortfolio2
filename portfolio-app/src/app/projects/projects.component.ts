@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import {MatSelectModule} from '@angular/material/select';
+import { MatSelectModule } from '@angular/material/select';
+import { MatChipsModule } from '@angular/material/chips';
 
 const PROJECT_TYPES = ["Games", "Apps", "Other"];
 const WORK_TYPES = [
@@ -12,7 +13,7 @@ const WORK_TYPES = [
 @Component({
   selector: 'app-projects',
   standalone: true,
-  imports: [CommonModule, MatSelectModule],
+  imports: [CommonModule, MatSelectModule, MatChipsModule],
   templateUrl: './projects.component.html',
   styleUrl: './projects.component.scss'
 })
@@ -34,6 +35,9 @@ export class ProjectsComponent {
       id: 'missingNote'
     }
   ];
+  constructor(){
+    this.projectItems = this.projectItems.concat(this.projectItems).concat(this.projectItems);
+  }
 
   getSkillsLabel(item: ProjectItem){
     return item.skills.map(skill=>skill.label).join(' | ');

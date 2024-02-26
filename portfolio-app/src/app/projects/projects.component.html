@@ -25,7 +25,11 @@
             </a>
             
             <div class="bottom-section">
-            {{getSkillsLabel(item)}}
+                <div class ="skills-chips">
+                    <mat-chip color="primary" *ngFor="let skill of item.skills">
+                        {{skill.label}}
+                    </mat-chip>
+                </div>
             </div>
         </div>
     }
