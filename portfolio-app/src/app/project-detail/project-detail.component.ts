@@ -5,12 +5,12 @@ import { Observable,of, map } from 'rxjs';
 import { CommonModule } from '@angular/common';
 import { CarouselComponent } from '../carousel/carousel.component';
 import {DomSanitizer, SafeHtml} from '@angular/platform-browser';
-
+import { MatChipsModule } from '@angular/material/chips';
 
 @Component({
   selector: 'app-project-detail',
   standalone: true,
-  imports: [CommonModule, CarouselComponent],
+  imports: [CommonModule, CarouselComponent, MatChipsModule],
   templateUrl: './project-detail.component.html',
   styleUrl: './project-detail.component.scss'
 })

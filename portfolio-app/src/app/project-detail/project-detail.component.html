@@ -3,9 +3,16 @@
     <app-carousel class="carousel" [slides]="(details$ | async)?.slides ?? []">
 
     </app-carousel>
-    <div class="project-skills"></div>
-    <div class="project-description" [innerHtml]="(details$ | async)?.summary">
-        description
+    <div class="text">
+        <div class="project-skills">
+            <mat-chip *ngFor="let skill of (details$ | async)?.skills">
+                {{skill}}
+            </mat-chip>
+        </div>
+        <div class="project-description" [innerHtml]="(details$ | async)?.summary">
+            description
+        </div>
     </div>
+    
 </div>
 
