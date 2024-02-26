@@ -1,7 +1,11 @@
-<h2>{{(details$ | async)?.title}}</h2>
-<app-carousel [slides]="(details$ | async)?.slides ?? []">
+<h1>{{(details$ | async)?.title}}</h1>
+<div class=" body">
+    <app-carousel class="carousel" [slides]="(details$ | async)?.slides ?? []">
 
-</app-carousel>
-<div class="project-description" [innerHtml]="(details$ | async)?.summary">
-    description
+    </app-carousel>
+    <div class="project-skills"></div>
+    <div class="project-description" [innerHtml]="(details$ | async)?.summary">
+        description
+    </div>
 </div>
+

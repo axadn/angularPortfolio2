@@ -2,8 +2,14 @@
     display:flex;
     align-items: center;
     flex-direction: column;
-
-    .project-description{
-        min-width: 75%;
+    .body{
+        width: 100%;
+        .carousel {
+            float: left;
+        }
+        .project-description{
+            min-width: 75%;
+        }
     }
+    
 }
