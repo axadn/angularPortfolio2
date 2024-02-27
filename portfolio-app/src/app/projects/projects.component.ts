@@ -2,6 +2,8 @@ import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { MatSelectModule } from '@angular/material/select';
 import { MatChipsModule } from '@angular/material/chips';
+import { Router, RouterModule } from '@angular/router';
+
 
 const PROJECT_TYPES = ["Games", "Apps", "Other"];
 const WORK_TYPES = [
@@ -13,7 +15,7 @@ const WORK_TYPES = [
 @Component({
   selector: 'app-projects',
   standalone: true,
-  imports: [CommonModule, MatSelectModule, MatChipsModule],
+  imports: [CommonModule, MatSelectModule, MatChipsModule, RouterModule],
   templateUrl: './projects.component.html',
   styleUrl: './projects.component.scss'
 })

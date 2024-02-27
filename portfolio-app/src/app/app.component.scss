@@ -21,7 +21,8 @@
 }
 
 .content-wrapper{
-    padding: 35px;
-    height: calc(100% - 64px);
+    margin: 35px;
+    height: calc(100vh - 99px);
     box-sizing: border-box;
+    position: relative;
 }

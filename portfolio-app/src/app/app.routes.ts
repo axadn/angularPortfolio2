@@ -6,9 +6,14 @@ import { ProjectDetailComponent } from './project-detail/project-detail.componen
 
 export const routes: Routes = [
     
-    {path: 'about', component: AboutComponent},
-    {path: 'contact', component: ContactComponent},
-    {path: 'projects', component: ProjectsComponent},
-    {path: 'projects/:id', component: ProjectDetailComponent},
-    { path: '**', component: AboutComponent},
+    {path: 'about', component: AboutComponent,
+        data: { animation: 'AboutPage' }},
+    {path: 'contact', component: ContactComponent,
+    data: { animation: 'ContactPage' }},
+    {path: 'projects', component: ProjectsComponent,
+    data: { animation: 'ProjectsPage' }},
+    {path: 'projects/:id', component: ProjectDetailComponent,
+    data: { animation: 'ProjectDetailPage' }},
+    { path: '**', component: AboutComponent,
+    data: { animation: 'AboutPage' }},
 ];

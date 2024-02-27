@@ -1,14 +1,16 @@
-<mat-toolbar class="toolbar">
-  <div routerLink="/about" 
-    routerLinkActive="active" class="nav-link">
-    About</div>
-  <div mat-stroked-button  routerLink="/projects" 
-    routerLinkActive="active" class="nav-link">
-    Projects</div>
-  <div mat-stroked-button  routerLink="/contact" 
-    routerLinkActive="active" class="nav-link">
-    Contact</div>
-</mat-toolbar>
-<div class="content-wrapper">
-  <router-outlet></router-outlet>
+<div [@routeAnimations]="getRouteAnimationData()">
+  <mat-toolbar class="toolbar">
+    <div routerLink="/about" 
+      routerLinkActive="active" class="nav-link">
+      About</div>
+    <div mat-stroked-button  routerLink="/projects" 
+      routerLinkActive="active" class="nav-link">
+      Projects</div>
+    <div mat-stroked-button  routerLink="/contact" 
+      routerLinkActive="active" class="nav-link">
+      Contact</div>
+  </mat-toolbar>
+  <div  class="content-wrapper">
+    <router-outlet></router-outlet>
+  </div>
 </div>
