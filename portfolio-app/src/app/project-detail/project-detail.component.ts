@@ -29,7 +29,7 @@ export class ProjectDetailComponent implements OnInit{
         description: "The complete soundtrack"}], 
 
       summary: 'Gate of Providence is an RPG that was created by Studio Xehryn. I composed 12 original soundtracks for this game.',
-      skills : ['fooling around', 'programming']
+      skills : ['Musical Composition']
 
     },
     'missingNote' : {
@@ -37,7 +37,7 @@ export class ProjectDetailComponent implements OnInit{
       slides: [{type: 'html', html: this.sanitizer.bypassSecurityTrustHtml('<iframe width="100%" height="100%" src="https://www.youtube.com/embed/9R2U5_a6aYQ?si=NuLg1pQVJYXRpg7l" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>'),
        description: 'Gameplay example'}],
       summary: 'I developed this game for a client. It is optimized for mobile devices, but it also runs in the browser. Three songs are chosen at random, and players try to press the correct keys as tiles (snowballs) fall toward the keyboard. I handled every aspect of this project myself (Except for the background image. It\'s public domain). I created the art/sprites, programmed the midi wavetable synthesis, gameplay, arranged 12 classic Christmas songs for the piano, etc. <br> <br> The most interesting part of this project was probably programming the midi synthesizer. There weren\'t any satisfactory solutions at there that allowed using arbitrary soundfonts and preserving the velocity layers, so I cooked up my own.',
-      skills : ['fooling around', 'programming']
+      skills : ['Musical composition', 'programming', '3d/2d art']
 
     }
   };
