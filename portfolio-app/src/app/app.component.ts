@@ -6,6 +6,11 @@ import { ChildrenOutletContexts } from '@angular/router';
 import { transition, trigger, query, style, group, animate, animateChild } from '@angular/animations';
 const projectsEnterAnimation = 
 group([
+  query(':enter',[
+    style({
+     position: 'absolute',
+      top: 0
+    })]),
  query('.project-preview:nth-child(even)', [
   style({
     position: 'relative',
@@ -35,7 +40,7 @@ group([
 ]);
 
 const projectsExitAnimation = 
-(query(':leave',[style({opacity: 100}),animate('600ms ease-out', style({opacity: 0}))]));
+(query(':leave',[style({opacity: 100}), animate('600ms ease-out', style({opacity: 0}))]));
 
 const detailsEnterAnimation = 
 group([  query(':enter',[
@@ -64,6 +69,36 @@ group([  query(':enter',[
   ])
  ]);
 
+const aboutExitAnimation =
+ group([  
+   query(':leave .content', [
+     style({
+       position: 'relative',
+       left: '0',
+       opacity: 100
+     }),
+     animate('200ms ease-in', style({left: '100vw', opacity: 20}))
+ 
+   ])
+  ]);
+
+const aboutEnterAnimation  = group([  
+  query(':enter',[
+    style({
+     position: 'absolute',
+     top : 0,
+    }),
+  ], {optional: true}),
+   query(':enter .content', [
+     style({
+       position: 'relative',
+       left: '-100vw'
+     }),
+     animate('400ms ease-out', style({left: '0'}))
+   ])
+  ]);
+ 
+
 
 @Component({
   selector: 'app-root',
@@ -74,9 +109,15 @@ group([  query(':enter',[
   animations: [
     trigger('routeAnimations',
       [ 
-        transition('* => ProjectsPage',projectsEnterAnimation,),
+        transition('AboutPage => ProjectsPage',
+          group([aboutExitAnimation, projectsEnterAnimation])),
         transition('ProjectsPage => ProjectDetailPage', [
-           group([projectsExitAnimation, detailsEnterAnimation])]),
+          group([projectsExitAnimation, detailsEnterAnimation])]),
+        transition('ProjectsPage => AboutPage',[ 
+          group([projectsExitAnimation, aboutEnterAnimation])]),
+        transition('ProjectDetailPage => AboutPage',[ 
+            group([ aboutEnterAnimation])]),
+        
         ])
   ]
 })
