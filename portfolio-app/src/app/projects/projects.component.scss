@@ -55,9 +55,11 @@
         .skills-chips{
             display: flex;
             gap: 5px;
-            justify-content: center;
             flex-wrap: wrap;
             width: 350px;
+            ::ng-deep .mat-mdc-chip {
+                border-radius: 5px;
+            }
         }
     }
 }
