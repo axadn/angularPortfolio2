@@ -3,19 +3,30 @@
     height: 100%;
 }
 
-.social-links{
-    display: flex;
-    gap: 10px;
-    padding-bottom: 10px;
+.top-section {
+    margin: -35px;
+    padding: 35px 35px 50px 35px;
+    background: white;
 }
-.social-link{
-    width: 48px;
-    height: 48px;
-    &:hover{
-        cursor: pointer;
+
+.bottom-section {
+    margin: -35px;
+    padding: 35px 50px 35px 35px;
+    background: #eb3681;
+    .social-links{
+        display: flex;
+        gap: 10px;
+        padding-bottom: 10px;
     }
-    img{
+    .social-link{
         width: 48px;
         height: 48px;
+        &:hover{
+            cursor: pointer;
+        }
+        img{
+            width: 48px;
+            height: 48px;
+        }
     }
 }
