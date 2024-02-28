@@ -4,12 +4,12 @@
 }
 
 .top-section {
-    padding: 35px 35px 50px 35px;
+    padding: 35px;
     background: white;
 }
 
 .bottom-section {
-    padding: 35px 50px 35px 35px;
+    padding: 35px;
     background: #eb3681;
     .social-links{
         display: flex;
@@ -19,7 +19,7 @@
 
         .email-link{
             border-radius: 5px;
-            padding: 8px;
+            padding: 14px;
             background: white;
         }
     }
