@@ -97,6 +97,33 @@ const aboutEnterAnimation  = group([
      animate('400ms ease-out', style({left: '0'}))
    ])
   ]);
+
+  const contactEnterAnimation = 
+  group([  
+    query(':enter',[
+      style({
+       position: 'absolute',
+       top : 0,
+      }),
+    ], {optional: true}),
+     query(':enter .top-section', [
+       style({
+         position: 'relative',
+         left: '-100vw'
+       }),
+       animate('400ms ease-out', style({left: '0'}))
+     ]),
+     query(':enter .bottom-section', [
+      style({
+        position: 'relative',
+        top: '100vh'
+      }),
+      animate('400ms 300ms ease-out', style({top: '0'}))
+    ])
+]);
+
+const contactExitAnimation = 
+(query(':leave',[style({opacity: 100}), animate('600ms ease-out', style({opacity: 0}))]));
  
 
 
@@ -117,8 +144,16 @@ const aboutEnterAnimation  = group([
           group([projectsExitAnimation, aboutEnterAnimation])]),
         transition('ProjectDetailPage => AboutPage',[ 
             group([ aboutEnterAnimation])]),
-        
-        ])
+        transition('ProjectsPage => ContactPage', [
+          group([ projectsExitAnimation, contactEnterAnimation])]),
+        transition('AboutPage => ContactPage', [
+          group([ aboutExitAnimation, contactEnterAnimation])
+        ]),
+        transition('ProjectDetailPage => ContactPage', group([contactEnterAnimation]) ),
+        transition('ContactPage => ProjectsPage', group([ contactExitAnimation, projectsEnterAnimation])),
+        transition('ContactPage => AboutPage', group([ contactExitAnimation, aboutEnterAnimation])),
+
+      ])
   ]
 })
 export class AppComponent {
