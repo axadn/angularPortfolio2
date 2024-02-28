@@ -2,3 +2,20 @@
     width: 100%;
     height: 100%;
 }
+
+.social-links{
+    display: flex;
+    gap: 10px;
+    padding-bottom: 10px;
+}
+.social-link{
+    width: 48px;
+    height: 48px;
+    &:hover{
+        cursor: pointer;
+    }
+    img{
+        width: 48px;
+        height: 48px;
+    }
+}
