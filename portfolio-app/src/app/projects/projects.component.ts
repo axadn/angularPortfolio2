@@ -25,28 +25,28 @@ export class ProjectsComponent {
     {
       title: '',
       previewSrc: 'assets/providence/g.png',
-      skills: [{id: 'music', label: "Musical Composition"}],
+      skills: [{id: 'music', label: "musical composition"}],
       id: 'providence'
     },
     {
       title: 'Missing Note',
       previewSrc: 'assets/missingNote/preview.png',
-      skills: [{id: "art", label: '3d Models'}, {id: "art", label: '2d Art'},
-       {id: 'software', label: "Programming/Development"},
-       {id: 'music', label: "Music"}],
+      skills: [ {id: "art", label: '2d Art'},
+       {id: 'software', label: "programming"},
+       {id: 'music', label: "musical composition"}],
       id: 'missingNote'
     },
     {
       title: 'Downhill Hazard',
       previewSrc: 'assets/downhill/screenshot1.png',
-      skills: [{id: "art", label: '3d Models'}, {id: "art", label: '2d Art'},
-       {id: 'software', label: 'Programming/Development'}],
+      skills: [{id: "art", label: '3d modeling'},
+       {id: 'software', label: 'programming'}],
       id: 'downhill'
     },
     {
       title: 'Club Dzign',
       previewSrc: 'assets/dzignclub/screen2.png',
-      skills: [{id: "art", label: '3d Models'}],
+      skills: [{id: "art", label: '3d modeling'}],
       id: 'clubdzign'
     }
   ];
