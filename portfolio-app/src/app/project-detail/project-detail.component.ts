@@ -47,6 +47,32 @@ export class ProjectDetailComponent implements OnInit{
       summary: 'Downhill Hazard is a 3D snowboarding game with physics built from scratch using JavaScript.',
       skills : [ 'programming', '3d/2d art']
 
+    }
+    ,
+    'clubdzign' : {
+      title: "Club Dzign",
+      
+      slides: [
+        {type: 'html', html : this.sanitizer.bypassSecurityTrustHtml('<iframe width="100%" height="100%" src="https://www.youtube.com/embed/0PvbEdisvc4?si=Jk0rSvpw-LTF-Cdd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+        ), description: 'Wolf charm model'},
+        {type: 'html', html: this.sanitizer.bypassSecurityTrustHtml('<iframe width="100%" height="100%" src="https://www.youtube.com/embed/M5W6rUDLL4o?si=6rUlGPzQzO32h8Ep" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>'),
+          description: 'I am proud of this this green tiger\'s eye texture I created from scratch.'},
+        {type: 'html', html : this.sanitizer.bypassSecurityTrustHtml('<iframe width="100%" height="100%" src="https://www.youtube.com/embed/jrWlRYZqHLQ?si=8Flz40dVYtQ02v00" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+        ), description: 'Skull charm model'},
+        {type: 'html',
+         html: this.sanitizer.bypassSecurityTrustHtml('<iframe width="100%" height="100%" src="https://www.youtube.com/embed/0_FCu8Y5ej8?si=1PILdyB-0ecWK55X" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>'),
+          description: 'Ball charm model'},
+        {type: 'html',
+        html: this.sanitizer.bypassSecurityTrustHtml('<iframe width="100%" height="100%" src="https://www.youtube.com/embed/wEiNd5-hYLo?si=MLFf-lD4NrKDapvt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>'),
+          description: 'Turquoise stone'},
+        {type: 'html',
+        html: this.sanitizer.bypassSecurityTrustHtml('<iframe width="100%" height="100%" src="https://www.youtube.com/embed/0gs5bA85oU8?si=iMa5BJVXfEoU1JTY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>'),
+          description: 'Eagle eye stone'},
+        {type: 'html', html: this.sanitizer.bypassSecurityTrustHtml('<iframe width="100%" height="100%" src="https://www.youtube.com/embed/rmoYAsdkZng?si=FZtEASaBpriybetL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>'),
+       description: 'Preview of the stone models.'}],
+      summary: 'I created a total of 15 charms and 27 stone models for Club Dzign\'s "3D Bracelet Maker App". The models are all optimized for mobile devices.',
+      skills : ['3d art']
+
     },
 
   };

@@ -42,6 +42,12 @@ export class ProjectsComponent {
       skills: [{id: "art", label: '3d Models'}, {id: "art", label: '2d Art'},
        {id: 'software', label: 'Programming/Development'}],
       id: 'downhill'
+    },
+    {
+      title: 'Club Dzign',
+      previewSrc: 'assets/dzignclub/screen2.png',
+      skills: [{id: "art", label: '3d Models'}],
+      id: 'clubdzign'
     }
   ];
   constructor(){
