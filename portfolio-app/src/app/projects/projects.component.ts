@@ -23,6 +23,12 @@ export class ProjectsComponent {
   workTypeFilter = "all";
   projectItems: ProjectItem[] = [
     {
+      title: 'Club Dzign',
+      previewSrc: 'assets/dzignclub/screen2.png',
+      skills: [{id: "art", label: '3d modeling'}],
+      id: 'clubdzign'
+    },
+    {
       title: '',
       previewSrc: 'assets/providence/g.png',
       skills: [{id: 'music', label: "musical composition"}],
@@ -43,12 +49,6 @@ export class ProjectsComponent {
        {id: 'software', label: 'programming'}],
       id: 'downhill'
     },
-    {
-      title: 'Club Dzign',
-      previewSrc: 'assets/dzignclub/screen2.png',
-      skills: [{id: "art", label: '3d modeling'}],
-      id: 'clubdzign'
-    }
   ];
   constructor(){
     
