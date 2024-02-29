@@ -25,7 +25,7 @@ export class ProjectsComponent {
     {
       title: '',
       previewSrc: 'assets/providence/g.png',
-      skills: [{id: 'music', label: "Musical Compisition"}],
+      skills: [{id: 'music', label: "Musical Composition"}],
       id: 'providence'
     },
     {
@@ -35,10 +35,17 @@ export class ProjectsComponent {
        {id: 'software', label: "Programming/Development"},
        {id: 'music', label: "Music"}],
       id: 'missingNote'
+    },
+    {
+      title: 'Downhill Hazard',
+      previewSrc: 'assets/downhill/screenshot1.png',
+      skills: [{id: "art", label: '3d Models'}, {id: "art", label: '2d Art'},
+       {id: 'software', label: 'Programming/Development'}],
+      id: 'downhill'
     }
   ];
   constructor(){
-    this.projectItems = this.projectItems.concat(this.projectItems).concat(this.projectItems);
+    
   }
 
   getSkillsLabel(item: ProjectItem){

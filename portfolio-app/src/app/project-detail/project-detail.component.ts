@@ -39,7 +39,16 @@ export class ProjectDetailComponent implements OnInit{
       summary: 'I developed this game for a client. It is optimized for mobile devices, but it also runs in the browser. Three songs are chosen at random, and players try to press the correct keys as tiles (snowballs) fall toward the keyboard. I handled every aspect of this project myself (Except for the background image. It\'s public domain). I created the art/sprites, programmed the midi wavetable synthesis, gameplay, arranged 12 classic Christmas songs for the piano, etc. <br> <br> The most interesting part of this project was probably programming the midi synthesizer. There weren\'t any satisfactory solutions at there that allowed using arbitrary soundfonts and preserving the velocity layers, so I cooked up my own.',
       skills : ['Musical composition', 'programming', '3d/2d art']
 
-    }
+    },
+    'downhill' : {
+      title: "DownHill Hazard",
+      slides: [{type: 'html', html: this.sanitizer.bypassSecurityTrustHtml('<iframe width="100%" height="100%" src="https://www.youtube.com/embed/V_lSptQEBQY?si=rAdCOSqzPn59_YZC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>'),
+       description: 'Gameplay example'}],
+      summary: 'Downhill Hazard is a 3D snowboarding game with physics built from scratch using JavaScript.',
+      skills : [ 'programming', '3d/2d art']
+
+    },
+
   };
   details$: Observable<ProjectDetails> = of(blankProject);
 
