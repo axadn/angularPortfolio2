@@ -33,7 +33,7 @@ export class ProjectDetailComponent implements OnInit{
          <ul>
           <li><a href="https://xehryn.itch.io/gate-of-providence">Project Page</a></li>
          </ul>`),
-      skills : ['musical Composition']
+      skills : ['musical composition']
 
     },
     'missingNote' : {
