@@ -57,6 +57,11 @@ export class ProjectDetailComponent implements OnInit{
       summary: this.sanitizer.bypassSecurityTrustHtml(`
         Downhill Hazard is a 3D snowboarding game with physics built from scratch using JavaScript.
          <br> 
+         <br>
+         I originally created this game as a project for a coding bootcamp, but I've come back periodically to add
+         enhancements.
+         <br>
+         <br>
          <ul> 
             <li><a href="https://axadn.github.io/downhill-hazard/public/">Live Demo</a></li>
             <li><a href="https://github.com/axadn/downhill-hazard">Github</a></li>
