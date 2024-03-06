@@ -19,7 +19,7 @@ export class ProjectDetailComponent implements OnInit{
 
   details: {[key: string] : ProjectDetails}  ={
     'soundShroud' : {
-      title: "soundShroud",
+      title: "SoundShroud",
       
       slides: [
         {type: 'html', html : this.sanitizer.bypassSecurityTrustHtml('<iframe width="100%" height="100%" src="https://www.youtube.com/embed/FpGcsOTRMFo?si=7OsdMy7IwBX_xmQ3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
