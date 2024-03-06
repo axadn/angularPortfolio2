@@ -33,7 +33,10 @@ export class ProjectDetailComponent implements OnInit{
       Amazon web services S3 service is used for blob file storage.
       The frontend is built using of React and Redux.
 
-      It makes use of a job queue to handle audio conversion tasks by means of another server/application implemented in Node.js . This makes the architecture highly scalable.
+      <br>
+      <br>
+
+      It makes use of a job queue to handle audio conversion tasks by means of another job server implemented in Node.js . This makes the architecture highly scalable.
       <br>
       <br>
       
@@ -53,7 +56,7 @@ export class ProjectDetailComponent implements OnInit{
       <a href='https://github.com/axadn/SoundShroud'> Application Github Repo</a>
       <br>
       <br>
-      <a href='https://github.com/axadn/SoundShroud_background'> Audio Conversion Github Repo</a>
+      <a href='https://github.com/axadn/SoundShroud_background'> Audio Job Server Repo</a>
       `,
       skills : ['Full Stack Development', 'AWS', 'Responsive Design', 'React/Redux', 'Node.js', 'Ruby on Rails',
       'AJAX', 'PostgreSQL', 'Job Queue']
