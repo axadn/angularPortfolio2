@@ -50,10 +50,10 @@ export class ProjectDetailComponent implements OnInit{
       </ul>
       <br>
       <br>
-      <a href='https://github.com/axadn/SoundShroud'> Main Site Github repository</a>
+      <a href='https://github.com/axadn/SoundShroud'> Application Github Repo</a>
       <br>
       <br>
-      <a href='https://github.com/axadn/SoundShroud_background'> Audio Conversion Server Github Repository</a>
+      <a href='https://github.com/axadn/SoundShroud_background'> Audio Conversion Github Repo</a>
       `,
       skills : ['Full Stack Development', 'AWS', 'Responsive Design', 'React/Redux', 'Node.js', 'Ruby on Rails',
       'AJAX', 'PostgreSQL', 'Job Queue']
