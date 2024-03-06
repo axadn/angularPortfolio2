@@ -39,7 +39,8 @@ export class ProjectsComponent {
       previewSrc: 'assets/missingNote/preview.png',
       skills: [ {id: "art", label: '2d Art'},
        {id: 'software', label: "programming"},
-       {id: 'music', label: "musical composition"}],
+       {id: 'music', label: "musical composition"},
+      {id: 'software', label: 'sound synthesis'}],
       id: 'missingNote'
     },
     {
@@ -52,8 +53,9 @@ export class ProjectsComponent {
     {
       title: '',
       previewSrc: 'assets/soundShroud/icon2.jpg',
-      skills: [{id: 'software', label: 'software development',},
-      {id: 'software', label: 'deployment'}],
+      skills: [{id: 'software', label: 'software development'},
+      {id: 'software', label: 'deployment'},
+      {id: 'software', label: 'signal processing'}],
       id: "soundShroud"
     }
   ];

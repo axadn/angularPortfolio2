@@ -59,7 +59,7 @@ export class ProjectDetailComponent implements OnInit{
       <a href='https://github.com/axadn/SoundShroud_background'> Audio Job Server Repo</a>
       `,
       skills : ['Full Stack Development', 'AWS', 'Responsive Design', 'React/Redux', 'Node.js', 'Ruby on Rails',
-      'AJAX', 'PostgreSQL', 'Job Queue']
+      'AJAX', 'PostgreSQL', 'Job Queue', 'Signal Processing']
 
     },
     'providence' : {
@@ -91,7 +91,7 @@ export class ProjectDetailComponent implements OnInit{
        Three songs are chosen at random, and players try to press the correct keys as tiles (snowballs) fall toward the keyboard.
        <br> <br>
        I handled every aspect of this project myself (Except for the background image. It\'s public domain). I created the art/sprites, programmed the midi wavetable synthesis, gameplay, arranged 12 classic Christmas songs for the piano, etc. <br> <br> The most interesting part of this project was probably programming the midi synthesizer. There weren\'t any satisfactory solutions out there that allowed using arbitrary soundfonts and preserving the velocity layers, so I cooked up my own.`,
-      skills : ['musical composition', 'programming', '2d art', 'typeScript']
+      skills : ['musical composition', 'programming', '2d art', 'typeScript', 'sound synthesis']
 
     },
     'downhill' : {
