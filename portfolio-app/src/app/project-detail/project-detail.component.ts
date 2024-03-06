@@ -88,7 +88,7 @@ export class ProjectDetailComponent implements OnInit{
        Three songs are chosen at random, and players try to press the correct keys as tiles (snowballs) fall toward the keyboard.
        <br> <br>
        I handled every aspect of this project myself (Except for the background image. It\'s public domain). I created the art/sprites, programmed the midi wavetable synthesis, gameplay, arranged 12 classic Christmas songs for the piano, etc. <br> <br> The most interesting part of this project was probably programming the midi synthesizer. There weren\'t any satisfactory solutions out there that allowed using arbitrary soundfonts and preserving the velocity layers, so I cooked up my own.`,
-      skills : ['musical composition', 'programming', '2d art']
+      skills : ['musical composition', 'programming', '2d art', 'typeScript']
 
     },
     'downhill' : {
@@ -107,7 +107,7 @@ export class ProjectDetailComponent implements OnInit{
             <li><a href="https://axadn.github.io/downhill-hazard/public/">Live Demo</a></li>
             <li><a href="https://github.com/axadn/downhill-hazard">Github</a></li>
          </ul>  `),
-      skills : [ 'programming', '3d art', '2d art']
+      skills : [ 'programming', '3d art', '2d art', 'javaScript', 'webGL']
 
     }
     ,
