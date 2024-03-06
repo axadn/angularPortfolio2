@@ -49,6 +49,13 @@ export class ProjectsComponent {
        {id: 'software', label: 'programming'}],
       id: 'downhill'
     },
+    {
+      title: '',
+      previewSrc: 'assets/soundShroud/icon2.jpg',
+      skills: [{id: 'software', label: 'software development',},
+      {id: 'software', label: 'deployment'}],
+      id: "soundShroud"
+    }
   ];
   constructor(){
     

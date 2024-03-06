@@ -18,6 +18,47 @@ export class ProjectDetailComponent implements OnInit{
   constructor(private route: ActivatedRoute, private sanitizer: DomSanitizer) {}
 
   details: {[key: string] : ProjectDetails}  ={
+    'soundShroud' : {
+      title: "soundShroud",
+      
+      slides: [
+        {type: 'html', html : this.sanitizer.bypassSecurityTrustHtml('<iframe width="100%" height="100%" src="https://www.youtube.com/embed/FpGcsOTRMFo?si=7OsdMy7IwBX_xmQ3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+        ), description: ``}
+          ],
+      summary: `
+      <h2>Project description</h2>
+      SoundShroud is a music sharing application similiar to the popular site SoundCloud.
+      
+      The backend API is built using Ruby on Rails with a PostgreSQL database.
+      Amazon web services S3 service is used for blob file storage.
+      The frontend is built using of React and Redux.
+
+      It makes use of a job queue to handle audio conversion tasks by means of another server/application implemented in Node.js . This makes the architecture highly scalable.
+      <br>
+      <br>
+      
+       <h3>Features: </h3>
+       <ul>
+        <li> User authentication </li>
+        <li>  User uploaded content </li>
+        <li>  Continuous playback of music while navigating </li>
+        <li>  Time domain waveforms while playing music </li>
+        <li>  Auto-generated playlists </li>
+        <li>  Users can comments on tracks </li>
+        <li>  Full-text-search for tracks by title and description, users by username and display name </li>
+        <li>  Job Queue: Audio is converted to mp3 for decreased storage need and faster streaming (at the cost of upload processing time) </li>
+      </ul>
+      <br>
+      <br>
+      <a href='https://github.com/axadn/SoundShroud'> Main Site Github repository</a>
+      <br>
+      <br>
+      <a href='https://github.com/axadn/SoundShroud_background'> Audio Conversion Server Github Repository</a>
+      `,
+      skills : ['Full Stack Development', 'AWS', 'Responsive Design', 'React/Redux', 'Node.js', 'Ruby on Rails',
+      'AJAX', 'PostgreSQL', 'Job Queue']
+
+    },
     'providence' : {
       title: "Project 1",
       slides: [{
