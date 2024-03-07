@@ -1,6 +1,6 @@
 <mat-form-field  class="project-type-select">
     Work Type
-    <mat-select [(value)]="workTypeFilter">
+    <mat-select [value]="workTypeFilter" (valueChange)="onFilterChanged($event)">
         <mat-option value="all">
             All
         </mat-option>

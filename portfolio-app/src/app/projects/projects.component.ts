@@ -2,8 +2,8 @@ import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { MatSelectModule } from '@angular/material/select';
 import { MatChipsModule } from '@angular/material/chips';
-import { Router, RouterModule } from '@angular/router';
-
+import { Router, RouterModule, Params } from '@angular/router';
+import { ActivatedRoute } from '@angular/router';
 
 const PROJECT_TYPES = ["Games", "Apps", "Other"];
 const WORK_TYPES = [
@@ -21,6 +21,7 @@ const WORK_TYPES = [
 })
 export class ProjectsComponent {
   workTypeFilter = "all";
+  
   projectItems: ProjectItem[] = [
     {
       title: '',
@@ -59,8 +60,15 @@ export class ProjectsComponent {
       id: "soundShroud"
     }
   ];
-  constructor(){
-    
+
+  constructor(private route: ActivatedRoute, private router: Router) {
+    this.route.queryParams.subscribe((params : Params)=>{
+      this.workTypeFilter = params['filter'] ?? 'all';
+    });
+  }
+
+  onFilterChanged(filter: string){
+    this.router.navigate([], {queryParams: {filter}});
   }
 
   getSkillsLabel(item: ProjectItem){
