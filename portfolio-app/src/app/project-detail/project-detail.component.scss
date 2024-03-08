@@ -6,9 +6,8 @@
     padding-top: 25px;
     .body{
         width: 100%;
-        .carousel {
-            float: left;
-        }
+        display: flex;
+        flex-direction: column;
         .project-skills{
             display: flex;
             gap: 5px;
@@ -21,7 +20,25 @@
         .project-description{
             min-width: 75%;
             padding: 25px;
+            background-color: white;
+            border-radius: 4px;
+        }
+
+        .carousel{
+            padding: 20px;
+        }
+
+        .text{
+            padding: 20px;
+        }
+    }
+}
+
+@media (min-width: 1200px){
+    :host{
+        .body{
+            flex-direction: row;
         }
     }
     
-}
+} 
