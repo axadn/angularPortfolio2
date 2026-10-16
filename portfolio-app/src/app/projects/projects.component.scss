@@ -63,3 +63,25 @@
         }
     }
 }
+
+@media screen and (max-width: 450px) {
+    .project-preview{
+        .top-section{
+            width: 280px;
+            height: 160px;
+            .project-text {
+                height: 160px;
+                width: 280px;
+            }
+            img{
+                width: 280px;
+                height: 160px;
+            }
+        }
+        .bottom-section{
+            .skills-chips{
+                width: 280px;
+            }
+        }
+    }
+}

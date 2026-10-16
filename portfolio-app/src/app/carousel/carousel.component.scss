@@ -36,3 +36,18 @@
         cursor: pointer;
     }
 }
+
+@media screen and (max-width: 750px) {
+    :host{
+        width: 100%;
+        height: auto;
+        box-sizing: border-box;
+    }
+
+    .slide-content{
+        width: 100%;
+        height: auto;
+        box-sizing: border-box;
+
+    }
+}
