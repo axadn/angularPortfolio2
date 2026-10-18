@@ -63,7 +63,7 @@ export class ProjectDetailComponent implements OnInit{
 
     },
     'providence' : {
-      title: "Project 1",
+      title: "Gate of Providence",
       slides: [{
         type: 'html',
           html: this.sanitizer.bypassSecurityTrustHtml('<iframe width="100%" height="100%" src="https://www.youtube.com/embed/OoEqi-muDGU?si=ENEdLv_OU38oI71i" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>'), 
